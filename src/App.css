@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+:root {
+  --mainOne: rgb(42, 42, 53);
+  --mainTwo: #ccc;
+  --mainThree: #f3f3f3;
+  --mainFour: #232528;
+  --mainFive: rgb(206, 129, 28);
+  --mainSix: lightblue;
+  --mainSeven: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Chelsea Market', cursive !important;
+  background-color: var(--mainThree) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-family: 'Piedra', cursive !important; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainBlue {
+  color: var(--mainSix) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.mainOrange {
+  color: var(--mainFive) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainDark {
+  color: var(--mainFour) !important;
 }
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainFour);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainFour) !important;
+}
+
+.btn-black:hover {
+  background: var(--mainFour) !important;
+  color: var(--mainThree) !important;
+}
+
+.cart-icon { 
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainFive);
+}
+
