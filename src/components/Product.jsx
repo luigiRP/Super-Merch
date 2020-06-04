@@ -17,7 +17,7 @@ export default class Product extends Component {
                             value.handleDetail(id)
                         }>
                         <Link to='/details'>
-                            {<img src={img} alt="Product img" className="card-img-top"/>}
+                            {<img src={img} style={{width: '10rem', height:'10rem'}} alt="Product img" className="card-img-top"/>}
                         </Link>
                         <button className='cart-btn' disabled={inCart?true:false} onClick={() => 
                         {console.log('added to the cart')
